@@ -1,0 +1,64 @@
+/* components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* Тёмный фон */
+  padding: 20px;
+  color: #000;
+}
+
+.logo a {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 150px; /* Ширина логотипа */
+  height: auto; /* Высота будет пропорциональна ширине */
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.auth-buttons button {
+  background-color: #4caf50; /* Зелёный цвет кнопки */
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1em;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+  background-color: #45a049; /* Изменение цвета при наведении */
+}
+
+.login-btn {
+  background-color: #007bff; /* Синий для кнопки входа */
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}

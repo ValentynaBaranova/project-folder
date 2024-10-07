@@ -5,11 +5,13 @@ import store from "./redux/store"; // Убедитесь, что путь к sto
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import LessonPage from "./components/LessonPage";
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <Provider store={store}>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/lesson/:id" element={<LessonPage />} />
